@@ -5,12 +5,12 @@ from read_write import read
 
 
 class Love_2:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/xGVNmYgpK7U","https://youtu.be/VqJGeBzTqtE","https://youtu.be/cz9YCcCjXNI","https://youtu.be/yenrsHuUmeo","https://youtu.be/FQUfHP-tQ8s","https://youtu.be/3Dl9vuWHzto"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("러블리즈_공식촬영영상")

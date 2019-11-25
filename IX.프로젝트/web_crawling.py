@@ -11,6 +11,7 @@ if __name__ == '__main__':
     data = urlopen("https://comic.naver.com/webtoon/list.nhn?titleId=570503")
     soup = BeautifulSoup(data,"lxml") #httpResponse -> HTML
     # print(soup)
+    html = "<html><head><meta charset='utf-8'></head><body>"
     cartoon_titles = soup.find_all("td", attrs={"class":"title"}) #<td class="title">...</td>
     for cartoon_title in cartoon_titles:                          #cartoon_titles[:2]
         title = cartoon_title.find("a").text                      #<a>text</a>
@@ -18,5 +19,10 @@ if __name__ == '__main__':
         link="https://comic.naver.com" + link
         print(title)
         print(link)
+        html+="<a href='{}'>{}</a><br/>".format(link,title)
+    html += "</body></html>"
+    #print(hmtl)
+    with open("연애혁명.html","w",encoding="utf-8") as f:
+        f.write(html)
 
 

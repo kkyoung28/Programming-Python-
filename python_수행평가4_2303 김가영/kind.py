@@ -21,26 +21,26 @@ class Kind:
     def fbutton5(self):
         msg.showwarning('B-boy', '아직 준비중입니다!')
 
-    def Kpop(self):
+    def Kpop(self): #K-pop 버튼 클릭시 kpop.py로 이동할 수 있는 함수
         kpop = Kpop()
         print("원하는 그룹을 선택하세요!")
         open(file="kpop.py")
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("Dance_Kind")
         self.root.geometry("700x500+100+100")
         self.root.resizable(False, False)
 
-                # 레이블 생성, 메인이미지 삽입
+        # 레이블 생성, 메인이미지 삽입
         imagekind = PhotoImage(file="img/kind.png")
 
         label1 = Label(self.root, text="이미지", image=imagekind)
         label1.pack()
 
 
-
+        #K-pop만 활성화 나머지는 아직 X
         self.button1 = Button(self.root, width=15, height=8, text="K-pop", overrelief="solid", bg='salmon', command=self.Kpop)
         self.button1.place(x=120, y=170)
 

@@ -5,12 +5,12 @@ from read_write import read
 
 
 class OhmyGirl_2:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/FT4PBJcyAsY","https://youtu.be/6Y6luXfLOHU","https://youtu.be/mlWZT-OJfe4","https://youtu.be/TCtIVuVhE5I","https://youtu.be/tqH6wf8G_V8","https://youtu.be/GxUnUcSdRhk"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("오마이걸_공식촬영영상")

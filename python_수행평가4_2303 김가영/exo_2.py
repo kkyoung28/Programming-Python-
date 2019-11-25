@@ -5,12 +5,12 @@ from read_write import read
 
 
 class Exo_2:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/ulPxvDHN8v0","https://youtu.be/tOSSzsNCSzA","https://youtu.be/yR70ANNk-Vo","https://youtu.be/8oFFdhowiUs","https://youtu.be/rjfJshn20Vs","https://youtu.be/KfcMCOjGU9Q"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("엑소_공식촬영영상")

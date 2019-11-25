@@ -5,12 +5,12 @@ from read_write import read
 
 
 class Idle_2:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/vUos4Qaxu08","https://youtu.be/FogX5i9JO4w","https://youtu.be/fgD_o3nwsGI","https://youtu.be/EY2JikssROI"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("(여자)아이들_공식촬영영상")

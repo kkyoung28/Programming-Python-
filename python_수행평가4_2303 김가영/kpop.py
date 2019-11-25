@@ -7,7 +7,7 @@ from video_bts import Video_bts
 from video_exo import Video_exo
 from video_seven import Video_seven
 
-class Kpop:
+class Kpop: #각 그룹 버튼 클릭시 (각 그룹).py로 이동하는 함수
       def Video_oh(self):
          video_oh = Video_oh()
          print("원하는 영상종류를 선택하세요!")
@@ -38,7 +38,7 @@ class Kpop:
          print("원하는 영상종류를 선택하세요!")
          open(file="video_seven.py")
 
-      def __init__(self):
+      def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("Kind_K-pop")

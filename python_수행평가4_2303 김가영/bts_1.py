@@ -5,19 +5,19 @@ from read_write import read
 
 
 class Bts_1:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/WmGT7HoUqi0","https://youtu.be/H5dd2x8MV2o","https://youtu.be/BloMUUgaQXo","https://youtu.be/oFuY5M1lwiY","https://youtu.be/1dxnzJEusc4","https://youtu.be/CGuShacPoJ8"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("방탄소년단_공연영상")
         self.root.geometry("700x500+100+100")
         self.root.resizable(False, False)
 
-                # 레이블 생성, 메인이미지 삽입
+        # 레이블 생성, 메인이미지 삽입
         imagekind = PhotoImage(file="img/bts1.png")
 
         label1 = Label(self.root, text="이미지", image=imagekind)

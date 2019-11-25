@@ -5,12 +5,12 @@ from read_write import read
 
 
 class Bts_2:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/JP508l9jd-w","https://youtu.be/XGZwjxN3Bns","https://youtu.be/3yf0LHYJwMI","https://youtu.be/jMw5Wt7qQB0","https://youtu.be/CqFmjv0zp6g","https://youtu.be/W7Y3zlHah28"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("방탄소년단_공식촬영영상")

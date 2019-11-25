@@ -5,12 +5,12 @@ from read_write import read
 
 
 class Seven_1:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/59eLfJYZR7M","https://youtu.be/F9vUqdZMVwI","https://youtu.be/1EGupU4_Osg","https://youtu.be/bIZJFFo-iBM","https://youtu.be/CPTX9x759Ds","https://youtu.be/kNKktE8W91k"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("세븐틴_공연영상")

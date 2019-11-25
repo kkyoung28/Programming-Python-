@@ -5,19 +5,19 @@ from read_write import read
 
 
 class Exo_1:
-    def Link(self,num,final):
+    def Link(self,num,final): #버튼 마다 링크 연결
         link = ["https://youtu.be/7Zk5apxCYmI","https://youtu.be/_x6_pR--5Vs","https://youtu.be/yzPBBNowM4w","https://youtu.be/HKZ8p-NqWqE","https://youtu.be/P9tw9smiRBQ","https://youtu.be/Q2dAkDBMwV0"]
         webbrowser.open(link[num])
         read(final)
 
-    def __init__(self):
+    def __init__(self): #창 생성
         self.root = Toplevel()
 
         self.root.title("엑소_공연영상")
         self.root.geometry("700x500+100+100")
         self.root.resizable(False, False)
 
-                # 레이블 생성, 메인이미지 삽입
+        # 레이블 생성, 메인이미지 삽입
         imagekind = PhotoImage(file="img/exo1.png")
 
         label1 = Label(self.root, text="이미지", image=imagekind)
